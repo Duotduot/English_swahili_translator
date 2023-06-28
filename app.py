@@ -2,10 +2,12 @@ from flask import Flask, request, jsonify
 from google.cloud import translate_v2 as translate
 import sqlite3
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://duot_duot:duotduot123@localhost/english_swahili'
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 translate_client = translate.Client(390706)
 
 @app.route('/translate', methods=['POST'])
@@ -48,6 +50,18 @@ def get_languages():
         language_id = language['language']
         language_name = language['name']
         languages.append({'language_id': language_id, 'language_name': language_name})
+
+        # Connect to the SQLite database
+        connection = sqlite3.connect('english_swahili.db')
+        cursor = connection.cursor()
+
+        # Fetch the list of suppported languages
+        cursor.execute("SELECT * FROM languages")
+        languages = cursor.fetchall()
+
+        # Close the database connection
+        cursor.close()
+        connection.close()
 
         response = {
             'languages': languages
