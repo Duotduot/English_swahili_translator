@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://api_project:apiproject123@localhost/english_swahili'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://swahili_user:swahiliuser123@localhost/swahili_db'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 translate_client = translate.Client()
