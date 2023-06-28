@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify 
 from google.cloud import translate_v2 as translate
-import sqlite3
+import psycopg2
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -52,7 +52,7 @@ def get_languages():
         languages.append({'language_id': language_id, 'language_name': language_name})
 
         # Connect to the SQLite database
-        connection = sqlite3.connect('swahili_user.db')
+        connection = psycopg2.connect('postgresql://swahili_user:swahiliuser123@localhost/swahili_db')
         cursor = connection.cursor()
 
         # Fetch the list of suppported languages
