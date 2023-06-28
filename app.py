@@ -51,7 +51,7 @@ def get_languages():
         language_name = language['name']
         languages.append({'language_id': language_id, 'language_name': language_name})
 
-        # Connect to the SQLite database
+        # Connect to the  database
         connection = psycopg2.connect('postgresql://swahili_user:swahiliuser123@localhost/swahili_db')
         cursor = connection.cursor()
 
