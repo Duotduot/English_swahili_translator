@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://duot_duot:duotduot123@localhost/english_swahili'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-translate_client = translate.Client(390706)
+translate_client = translate.Client()
 
 class Translation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
