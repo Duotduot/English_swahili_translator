@@ -25,8 +25,8 @@ class Language(db.Model):
 def translate():
     data = request.get_json()
     source_text = data.get('source_text')
-    source_language = data.get('source_language')
-    target_language = data.get('target_language')
+    source_language = 'en'
+    target_language = 'sw'
 
     # Google Cloud Translation API
     translation = translate_client.translate(
