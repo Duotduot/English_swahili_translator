@@ -52,7 +52,7 @@ def get_languages():
         languages.append({'language_id': language_id, 'language_name': language_name})
 
         # Connect to the SQLite database
-        connection = sqlite3.connect('english_swahili.db')
+        connection = sqlite3.connect('swahili_user.db')
         cursor = connection.cursor()
 
         # Fetch the list of suppported languages
