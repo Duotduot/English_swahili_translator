@@ -10,7 +10,6 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 translate_client = translate.Client(390706)
 
-@app.route('/translate', methods=['POST'])
 class Translation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     source_text = db.Column(db.Text)
@@ -18,6 +17,11 @@ class Translation(db.Model):
     target_language = db.Column(db.String(2))
     translated_text = db.Column(db.Text)
 
+class Language(db.Model):
+    language_id = db.Column(db.String(2), primary_key=True)
+    language_name = db.Column(db.String(100))
+
+@app.route('/translate', methods=['POST'])
 def translate():
     data = request.get_json()
     source_text = data.get('source_text')
@@ -37,10 +41,6 @@ def translate():
     return jsonify(response)
 
 @app.route('/languages', methods=['GET'])
-class Language(db.Model):
-    language_id = db.Column(db.String(2), primary_key=True)
-    language_name = db.Column(db.String(100))
-
 def get_languages():
 
     response = translate_client.get_languages()
@@ -67,6 +67,9 @@ def get_languages():
             'languages': languages
         }
         return jsonify(response)
+    
+if __name__ == '__main__':
+    app.run()
 
 
 
