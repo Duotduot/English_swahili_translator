@@ -56,7 +56,7 @@ def get_languages():
         cursor = connection.cursor()
 
         # Fetch the list of suppported languages
-        cursor.execute("SELECT * FROM languages")
+        cursor.execute("SELECT * FROM language")
         languages = cursor.fetchall()
 
         # Close the database connection
