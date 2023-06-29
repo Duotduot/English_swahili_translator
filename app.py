@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify 
+from flask import Flask, request, jsonify, abort
 from google.cloud import translate_v2 as translate
 import psycopg2
 from flask_sqlalchemy import SQLAlchemy
