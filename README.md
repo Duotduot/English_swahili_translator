@@ -1,0 +1,2 @@
+**Identification of the problem you are trying to solve by building this particular app.**  
+- The problem I'm trying to solve with this app is a language barrier problem. Swahili is widely spoken language in East Africa. Recently, East Africa has been attracting a lot of foreigners in terms of tourism and business. This is where my app comes into play, it would be useful for these foreigners to have a Swahili translator while they go about their business.
