@@ -2,4 +2,7 @@
 - The problem I'm trying to solve with this app is a language barrier problem. Swahili is widely spoken language in East Africa. Recently, East Africa has been attracting a lot of foreigners in terms of tourism and business. This is where my app comes into play, it would be useful for these foreigners to have a Swahili translator while they go about their business.  
 2. **Why is it a problem that needs solving?**  
 - It is a problem that needs solving because there would be no proper way for people to connect with a language barrier in place. People understand each other better if there is good communication. Solving the problem would bring along a lot of benefits such as, better communication, efficient business dealings and better connections between people.  
-3. **Why have you chosen this database system. What are the drawbacks compared to others?**
+3. **Why have you chosen this database system. What are the drawbacks compared to others?**  
+- For this app I have chosen a RDMS, PostgreSQL for these reasons; It provides a reliable and structured way to store and retrieve data, making it a suitable option for complex data models and relationships. PostgreSQL can handle large amounts of data and and high concurrent user access efficiently. Another reason why I chose it, is because it allows the creation of custom data types, functions and extensions.  
+- However, PostgreSQL can be more complex to set up and manage compared to light-weight databases like SQLite. It requires more configuration including user management and permissions settings.Another drawback is that PostgreSQL may require more system resources in terms of memory and processing power.  
+4. **Identify and discuss the key functionalities and benefits of an ORM**
