@@ -5,4 +5,10 @@
 3. **Why have you chosen this database system. What are the drawbacks compared to others?**  
 - For this app I have chosen a RDMS, PostgreSQL for these reasons; It provides a reliable and structured way to store and retrieve data, making it a suitable option for complex data models and relationships. PostgreSQL can handle large amounts of data and and high concurrent user access efficiently. Another reason why I chose it, is because it allows the creation of custom data types, functions and extensions.  
 - However, PostgreSQL can be more complex to set up and manage compared to light-weight databases like SQLite. It requires more configuration including user management and permissions settings.Another drawback is that PostgreSQL may require more system resources in terms of memory and processing power.  
-4. **Identify and discuss the key functionalities and benefits of an ORM**
+4. **Identify and discuss the key functionalities and benefits of an ORM**  
+- Object-Relational Mapping(ORM) is a programming technique that allows developers to interact with a relational database using object-oriented paradigms.
+- **Object-Oriented Paradigm**- ORM bridges the gap between object-oriented programming languages and relational databases. It makes it easier to model and manipulate data.  
+- **Data Modelling and Relationships**- ORM frameworks provide tools to define data models and relationships between entities in the database. A benefit of this is developers can define classes and their attributes and entity relationships.  
+- **Querying Language**- ORM frameworks provide query languages that allow developers to retrieve data from the database using high-level, object-oriented syntax.  
+- **Perfomance Optimization**- Many ORM frameworks include features for performance optimization, such as lazy loading, eager loading and caching.  
+5. **Document all endpoints for your API**
