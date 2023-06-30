@@ -34,4 +34,6 @@ B. **Endpoint:** **'/languages'**
     }  
   ]  
 }  
-6. **An ERD for your app**
+6. **An ERD for your app**  
+![ERD for the app](./docs/ERD.drawio.png)  
+7. **Detail any third party services that your app will use**
