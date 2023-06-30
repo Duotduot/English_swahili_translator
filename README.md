@@ -47,4 +47,17 @@ A. **Translation and Language:**
 B. **User and Translation:**  
 - One-to-Many Relationship: Each User can perform multiple Translations, while each translation is associated with a single User.  
 - Foreign Key: The Translation entity can have a foreign key attribute, such as 'user_id', referencing the primary key of the User entity.  
-10. **Describe the way tasks are allocated and tracked in your project**
+10. **Describe the way tasks are allocated and tracked in your project**  
+A. **Task Allocation:**  
+- Developing a software plan  
+- Identifying the components and features of the API  
+- Breaking down the tasks into smaller manageable units  
+- Having a logical flow for getting the tasks done step by step  
+B. **Task Tracking:**  
+- I used a project management tool called 'Monday' to track the progress of my project.  
+- Each task had a clear description, difficulty level and estimated due date.  
+- The project management tool helped me track the progress of each individual task. I would regularly update the tasks depending if it was "in progress" or "completed"  
+C. **Version Control:**  
+- At the start of the project, I used a local repository to save and make changes to the project. However, I switched to using a Git remote repository to manage the project. Regular commits were made to the repository.  
+D. **Testing:**  
+- This was an ongoing task throughout the project. I tested all the API endpoints to make sure they are working as expected. I also implemented error handling features in the API.
