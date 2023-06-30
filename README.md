@@ -16,10 +16,10 @@ A. **Endpoint:** **'/translate'**
 - **Method:** POST  
 - **Description:** Translates the provided text from the source language to the target language.  
 - **Request Body:** {  
-  "source_text":"Text to be translated",  
+  "source_text": "Text to be translated",  
   "source_language": "en",  
   "target_language": "sw"  
 }  
 - **Response:** {  
-  "translated_text":"Translated text"  
+  "translated_text": "Translated text"  
 }
