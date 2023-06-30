@@ -40,4 +40,11 @@ B. **Endpoint:** **'/languages'**
 - Google Cloud Translation API is a third party service that I used in the app. The API offers a powerful machine learning-based translation service. It provides a wide range of translation capabilities such as language detection and also languag-specific features. The API is integrated into the app through a process which involves; setting up a Google Cloud account, enabling the Translation API, installing the Google Cloud Client Library, Authentication, importing the library and lastly performing translations.  
 8. **Describe your projects models in terms of the relationships they have with each other**  
 - A **Translation** is associated with a **Language** as both the source language and target language are represented by language codes. This represents a many-to-one relationship between the Translation entity and the Language entity. Multiple translations can have the same source or target language, but each translation is linked to a specific language.  
-9. **Discuss the database relations to be implemented in your application**
+9. **Discuss the database relations to be implemented in your application**  
+A. **Translation and Language:**  
+- One-to-Many Relationship: Each Language can be associated with multiple Translations, while each Translation is linked to a single Language.  
+- Foreign Key: The Translation entity can have a foreign key attribute, such as 'language_id', referencing the primary key of the Language entity.  
+B. **User and Translation:**  
+- One-to-Many Relationship: Each User can perform multiple Translations, while each translation is associated with a single User.  
+- Foreign Key: The Translation entity can have a foreign key attribute, such as 'user_id', referencing the primary key of the User entity.  
+10. **Describe the way tasks are allocated and tracked in your project**
