@@ -22,4 +22,16 @@ A. **Endpoint:** **'/translate'**
 }  
 - **Response:** {  
   "translated_text": "Translated text"  
-}
+}  
+B. **Endpoint:** **'/languages'**  
+- **Method:** GET  
+- **Description:** Retrieves the list of supported languages for translation.  
+- **Response:** {  
+  "languages:" [  
+    {  
+      "language_id": "en",  
+      "language_id": "sw"  
+    }  
+  ]  
+}  
+6. **An ERD for your app**
