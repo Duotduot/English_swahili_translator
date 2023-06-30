@@ -18,8 +18,8 @@ A. **Endpoint:** **'/translate'**
 - **Request Body:** {  
   "source_text":"Text to be translated",  
   "source_language": "en",  
-  "target_language": "sw"
+  "target_language": "sw"  
 }  
 - **Response:** {  
-  "translated_text":"Translated text"
+  "translated_text":"Translated text"  
 }
