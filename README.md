@@ -11,4 +11,15 @@
 - **Data Modelling and Relationships**- ORM frameworks provide tools to define data models and relationships between entities in the database. A benefit of this is developers can define classes and their attributes and entity relationships.  
 - **Querying Language**- ORM frameworks provide query languages that allow developers to retrieve data from the database using high-level, object-oriented syntax.  
 - **Perfomance Optimization**- Many ORM frameworks include features for performance optimization, such as lazy loading, eager loading and caching.  
-5. **Document all endpoints for your API**
+5. **Document all endpoints for your API**  
+A. **Endpoint:** **'/translate'**  
+- **Method:** POST  
+- **Description:** Translates the provided text from the source language to the target language.  
+- **Request Body:** {
+  "source_text":"Text to be translated",  
+  "source_language": "en",  
+  "target_language": "sw"
+}  
+- **Response:** {
+  "translated_text":"Translated text"
+}
