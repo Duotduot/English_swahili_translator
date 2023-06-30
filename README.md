@@ -36,4 +36,6 @@ B. **Endpoint:** **'/languages'**
 }  
 6. **An ERD for your app**  
 ![ERD for the app](./docs/ERD.drawio.png)  
-7. **Detail any third party services that your app will use**
+7. **Detail any third party services that your app will use**  
+- Google Cloud Translation API is a third party service that I used in the app. The API offers a powerful machine learning-based translation service. It provides a wide range of translation capabilities such as language detection and also languag-specific features. The API is integrated into the app through a process which involves; setting up a Google Cloud account, enabling the Translation API, installing the Google Cloud Client Library, Authentication, importing the library and lastly performing translations.  
+8. **Describe your projects models in terms of the relationships they have with each other**
