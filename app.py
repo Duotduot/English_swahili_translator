@@ -3,6 +3,7 @@ from google.cloud import translate_v2 as translate
 import psycopg2
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+import traceback
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://swahili_user:swahiliuser123@localhost/swahili_db'
@@ -75,17 +76,18 @@ def get_languages():
 
             # Fetch the list of supported languages
             cursor.execute("SELECT * FROM language")
-            languages = cursor.fetchall()
+            languages_from_db = cursor.fetchall()
 
             # Closing the database connection
             cursor.close()
             connection.close()
 
         response = {
-            'languages': languages
+            'languages': languages_from_db
         }
         return jsonify(response)
     except Exception as e:
+        traceback.print_exc()
         abort(500, 'An error occurred while retrieving languages.')
     
     

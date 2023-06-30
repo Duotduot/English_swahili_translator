@@ -28,10 +28,12 @@ B. **Endpoint:** **'/languages'**
 - **Description:** Retrieves the list of supported languages for translation.  
 - **Response:** {  
   "languages:" [  
-    {  
-      "language_id": "en",  
-      "language_id": "sw"  
-    }  
+   "en",  
+   "English"  
+  ],  
+  [  
+    "sw",  
+    "Swahili"  
   ]  
 }  
 6. **An ERD for your app**  
